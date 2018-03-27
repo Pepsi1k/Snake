@@ -8,7 +8,9 @@ int main(){
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    cout << "рфшен ленгвич";
+    for (int i = 0; i < 10; i++)
+        cout << "text";
+        
     system("pause");
     return 0;
 }
