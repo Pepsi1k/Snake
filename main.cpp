@@ -1,16 +1,29 @@
 #include <iostream>
-#include <clocale>
-#include <Windows.h>
 
 using namespace std;
 
-int main(){
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+int main()
+{
 
-    for (int i = 0; i < 10; i++)
-        cout << "text";
-        
-    system("pause");
+    
+    int var = 10;
+    int *ptr = &var;
+    int **pptr = &ptr;
+
+    cout << "var:    " << var << endl;
+    cout << "&var:   " << &var << endl;
+    cout << "\n\n";
+
+    cout << "*ptr:   " << *ptr << endl;
+    cout << "&ptr:   " << &ptr << endl;
+    cout << "ptr:    " << ptr << endl;
+    cout << "\n\n";
+
+    cout << "*pptr:   " << *pptr << endl;
+    cout << "&pptr:   " << &pptr << endl;
+    cout << "pptr:    " << pptr << endl;
+    cout << "**pptr:  " << *(*pptr) << endl;
+
+        system("pause");
     return 0;
 }
