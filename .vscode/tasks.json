@@ -9,7 +9,8 @@
             "command": "g++",
             "args": [
                 "-g",
-                "main.cpp"
+                "main.cpp",
+                "EvilSnake.cpp"
             ],
             "group": {
                 "kind": "build",
